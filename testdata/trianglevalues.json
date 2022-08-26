@@ -1,0 +1,52 @@
+{
+    "equilateral": {
+        "a":10,
+        "b":10,
+        "c":10
+    },
+    "isosceles": {
+        "a":20,
+        "b":30,
+        "c":30
+    },
+    "versatile": {
+        "a":20,
+        "b":30,
+        "c":40
+    },
+    "negativevalues": {
+        "a":-20,
+        "b":30,
+        "c":40
+    },
+    "specialchar": {
+        "a":20,
+        "b":"%",
+        "c":40
+    },
+    "stringvalue": {
+        "a":20,
+        "b":"et",
+        "c":40
+    },
+    "incrementalvalues": {
+        "a":10,
+        "b":20,
+        "c":30
+    },
+    "twosides": {
+        "a":10,
+        "b":20
+    },
+    "oneside": {
+        "a":10
+    },
+    "nosides": {
+    },
+    "diffattributes": {
+        "c":10,
+        "b":20,
+        "d":30
+    }
+
+}

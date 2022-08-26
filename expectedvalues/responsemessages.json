@@ -1,0 +1,9 @@
+{
+    "equilateralMsg": "This is equilateral triangle",
+    "isoscelesMsg": "This is isosceles triangle",
+    "versatileMsg": "This is versatile triangle",
+    "twosidesgreaterthanthirdside": "Sum of any 2 sides should be greater than the 3rd",
+    "numericsidesonly": "All triangle sides should be numeric",
+    "positivevaluesonly": "All triangle sides should be greater than 0",
+    "threesidesrequired": "Triangle should have 3 side"
+}
