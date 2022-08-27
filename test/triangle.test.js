@@ -10,7 +10,7 @@ describe('Triangle Calculator POST endpoint test',() => {
         const res = await request
             .post('')
             .send(trianglevalues.equilateral);
-        expect(res.statusCode).to.be.equal(200);
+        expect(res.statusCode).to.be.equal(200); 
     });
 
     it('Validate isosceles triangle status', async () => {
