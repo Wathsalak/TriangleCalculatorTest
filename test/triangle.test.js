@@ -109,4 +109,24 @@ describe('Triangle Calculator POST endpoint test',() => {
             .send(trianglevalues.equilateral);
         expect(res.statusCode).to.be.equal(418);
     });
+
+    it('Validate triangle type by passing large value', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.largevalues);
+        expect(res.statusCode).to.be.equal(418);
+    });
+
+    it('Validate triangle type by passing float value', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.floatvalues);
+        expect(res.statusCode).to.be.equal(200);
+    });
+
+    it('Validate triangle type without sending the payload', async () => {
+        const res = await request
+            .post('');
+        expect(res.statusCode).to.be.equal(422);
+    });
 })

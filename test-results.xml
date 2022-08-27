@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="2.4730" tests="20" failures="4">
-  <testsuite name="Root Suite" timestamp="2022-08-26T18:30:20" tests="0" time="0.0000" failures="0">
+<testsuites name="Mocha Tests" time="2.4150" tests="20" failures="2">
+  <testsuite name="Root Suite" timestamp="2022-08-27T09:25:51" tests="0" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Triangle Calculator POST endpoint test" timestamp="2022-08-26T18:30:20" tests="14" file="/Users/owner/WithSecure/TriangleCalculatorTest/test/triangle.test.js" time="1.7150" failures="1">
-    <testcase name="Triangle Calculator POST endpoint test Validate equilateral triangle status" time="0.1450" classname="Validate equilateral triangle status">
+  <testsuite name="Triangle Calculator POST endpoint test" timestamp="2022-08-27T09:25:51" tests="14" file="/Users/owner/WithSecure/TriangleCalculatorTest/test/triangle.test.js" time="1.7250" failures="1">
+    <testcase name="Triangle Calculator POST endpoint test Validate equilateral triangle status" time="0.1510" classname="Validate equilateral triangle status">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate isosceles triangle status" time="0.1130" classname="Validate isosceles triangle status">
+    <testcase name="Triangle Calculator POST endpoint test Validate isosceles triangle status" time="0.1160" classname="Validate isosceles triangle status">
       <failure message="expected 201 to equal 200" type="AssertionError"><![CDATA[AssertionError: expected 201 to equal 200
     at _callee2$ (test/triangle.test.js:20:38)
     at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:86:17)
@@ -15,33 +15,33 @@
     at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate versatile triangle status" time="0.1130" classname="Validate versatile triangle status">
+    <testcase name="Triangle Calculator POST endpoint test Validate versatile triangle status" time="0.1100" classname="Validate versatile triangle status">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate equilateral triangle type identification result" time="0.1110" classname="Validate equilateral triangle type identification result">
+    <testcase name="Triangle Calculator POST endpoint test Validate equilateral triangle type identification result" time="0.1180" classname="Validate equilateral triangle type identification result">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate isosceles triangle type identification result" time="0.1110" classname="Validate isosceles triangle type identification result">
+    <testcase name="Triangle Calculator POST endpoint test Validate isosceles triangle type identification result" time="0.1140" classname="Validate isosceles triangle type identification result">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate versatile triangle type identification result" time="0.1430" classname="Validate versatile triangle type identification result">
+    <testcase name="Triangle Calculator POST endpoint test Validate versatile triangle type identification result" time="0.1110" classname="Validate versatile triangle type identification result">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate response when sum of any 2 sides less than the 3rd" time="0.1160" classname="Validate response when sum of any 2 sides less than the 3rd">
+    <testcase name="Triangle Calculator POST endpoint test Validate response when sum of any 2 sides less than the 3rd" time="0.1200" classname="Validate response when sum of any 2 sides less than the 3rd">
     </testcase>
     <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing special charactors as parameters" time="0.1120" classname="Validate POST method by passing special charactors as parameters">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing string values as parameters" time="0.1190" classname="Validate POST method by passing string values as parameters">
+    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing string values as parameters" time="0.1700" classname="Validate POST method by passing string values as parameters">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing negative values as parameters" time="0.1190" classname="Validate POST method by passing negative values as parameters">
+    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing negative values as parameters" time="0.1200" classname="Validate POST method by passing negative values as parameters">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing only two sides" time="0.1160" classname="Validate POST method by passing only two sides">
+    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing only two sides" time="0.1140" classname="Validate POST method by passing only two sides">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing empty payload" time="0.1330" classname="Validate POST method by passing empty payload">
+    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing empty payload" time="0.1100" classname="Validate POST method by passing empty payload">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing different attributes" time="0.1160" classname="Validate POST method by passing different attributes">
+    <testcase name="Triangle Calculator POST endpoint test Validate POST method by passing different attributes" time="0.1250" classname="Validate POST method by passing different attributes">
     </testcase>
-    <testcase name="Triangle Calculator POST endpoint test Validate triangle type identification using GET method" time="0.1230" classname="Validate triangle type identification using GET method">
+    <testcase name="Triangle Calculator POST endpoint test Validate triangle type identification using GET method" time="0.1170" classname="Validate triangle type identification using GET method">
     </testcase>
   </testsuite>
-  <testsuite name="Triangle Calculator GET/version endpoint test" timestamp="2022-08-26T18:30:22" tests="6" file="/Users/owner/WithSecure/TriangleCalculatorTest/test/version.test.js" time="0.7570" failures="3">
-    <testcase name="Triangle Calculator GET/version endpoint test Validate status code of the GET/version endpoint" time="0.1230" classname="Validate status code of the GET/version endpoint">
+  <testsuite name="Triangle Calculator GET/version endpoint test" timestamp="2022-08-27T09:25:53" tests="6" file="/Users/owner/WithSecure/TriangleCalculatorTest/test/version.test.js" time="0.6880" failures="1">
+    <testcase name="Triangle Calculator GET/version endpoint test Validate status code of the GET/version endpoint" time="0.1130" classname="Validate status code of the GET/version endpoint">
       <failure message="expected 400 to equal 200" type="AssertionError"><![CDATA[AssertionError: expected 400 to equal 200
     at _callee$ (test/version.test.js:10:38)
     at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:86:17)
@@ -51,31 +51,15 @@
     at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testcase>
-    <testcase name="Triangle Calculator GET/version endpoint test Validate response message of the GET/version endpoint" time="0.1140" classname="Validate response message of the GET/version endpoint">
-      <failure message="expected &apos;{&quot;message&quot;:&quot;Oops, something went wron…&apos; to equal &apos;0.0.2&apos;" type="AssertionError"><![CDATA[AssertionError: expected '{"message":"Oops, something went wron…' to equal '0.0.2'
-    at _callee2$ (test/version.test.js:15:32)
-    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:86:17)
-    at Generator._invoke (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:66:24)
-    at Generator.next (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:117:21)
-    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
-    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    <testcase name="Triangle Calculator GET/version endpoint test Validate response message of the GET/version endpoint" time="0.1120" classname="Validate response message of the GET/version endpoint">
     </testcase>
-    <testcase name="Triangle Calculator GET/version endpoint test Validate data type of the GET/version response" time="0.1170" classname="Validate data type of the GET/version response">
+    <testcase name="Triangle Calculator GET/version endpoint test Validate data type of the GET/version response" time="0.1150" classname="Validate data type of the GET/version response">
     </testcase>
-    <testcase name="Triangle Calculator GET/version endpoint test Validate response type of the GET/version endpoint" time="0.1650" classname="Validate response type of the GET/version endpoint">
-      <failure message="expected &apos;application/json&apos; to equal &apos;text/html&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'application/json' to equal 'text/html'
-    at _callee4$ (test/version.test.js:25:32)
-    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:86:17)
-    at Generator._invoke (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:66:24)
-    at Generator.next (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:117:21)
-    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
-    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    <testcase name="Triangle Calculator GET/version endpoint test Validate response type of the GET/version endpoint" time="0.1150" classname="Validate response type of the GET/version endpoint">
     </testcase>
     <testcase name="Triangle Calculator GET/version endpoint test Validate version endpoint response using POST method" time="0.1110" classname="Validate version endpoint response using POST method">
     </testcase>
-    <testcase name="Triangle Calculator GET/version endpoint test Validate version endpoint response without defining the URN" time="0.1170" classname="Validate version endpoint response without defining the URN">
+    <testcase name="Triangle Calculator GET/version endpoint test Validate version endpoint response without defining the URN" time="0.1130" classname="Validate version endpoint response without defining the URN">
     </testcase>
   </testsuite>
 </testsuites>
