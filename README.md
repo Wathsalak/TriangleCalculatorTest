@@ -38,11 +38,20 @@ Test Execution
 1. GET/version endpoint return status code **400** response for some API calls
 2. Given POST endpoint used to verify the type of the triangle by the 3 sides, which expect only to retrieve data with 200 status code instead of creating resource (triangle on the server side - **201 status code**). For isosceles triangle, identification request creates the resource on the server side instead of retrieving the type of the triangle
 3. Response type of the GET/version endpoint changed based on the return text and status code
-4. Status code 418 - I'm a teapot is not an informative error message in client side
+4. Status code **418 - I'm a teapot** is not an informative error message in client side
 
 Console log
 
+![img.png](readme-screenshots/consolelog.png)
+
+Jenkins build console log
+
+![img.png](readme-screenshots/jenkinsbuildlog.png)
 
 Report
 
-Jenkins build console log
+![img.png](readme-screenshots/mochawesomereport.png)
+
+![img.png](readme-screenshots/jenkinsreport.png)
+
+
