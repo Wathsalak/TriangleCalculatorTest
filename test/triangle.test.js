@@ -124,6 +124,13 @@ describe('Triangle Calculator POST endpoint test',() => {
         expect(res.statusCode).to.be.equal(200);
     });
 
+    it('Validate triangle type by passing side value as zero', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.zeroside);
+        expect(res.statusCode).to.be.equal(422);
+    });
+
     it('Validate triangle type without sending the payload', async () => {
         const res = await request
             .post('');

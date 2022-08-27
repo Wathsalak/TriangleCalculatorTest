@@ -20,7 +20,7 @@ Test Execution
 
 ## Data
 
-* Test Data can be found in ../testdata folder in JSON format
+* Test Data can be found in ../testdata folder in JSON format (with all combinations of test data)
 * All the response messages and status messages are defined in ../exepectedvalues folder in JSON format
 
 ## Test scripts
