@@ -1,4 +1,4 @@
-const supertest = require("supertest")
+const supertest = require("supertest");
 const expect = require('chai').expect;
 const tranglevalues = require('../testdata/trianglevalues.json');
 
@@ -27,6 +27,11 @@ describe('Triangle Calculator GET/version endpoint test',() => {
 
     it('Validate version endpoint response using POST method', async () => {
         const res = await request.post('version');
+        expect(res.statusCode).to.be.equal(418);
+    });
+
+    it('Validate version endpoint response using PATCH method', async () => {
+        const res = await request.patch('version');
         expect(res.statusCode).to.be.equal(418);
     });
 

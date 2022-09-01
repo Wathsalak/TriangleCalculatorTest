@@ -59,31 +59,63 @@ describe('Triangle Calculator POST endpoint test',() => {
     it('Validate POST method by passing special charactors as parameters', async () => {
         const res = await request
             .post('')
-            .send(trianglevalues.specialchar);
+            .send(trianglevalues.stringvalueforsideb);
         expect(res.statusCode).to.be.equal(422);
         expect(res._body.error).to.be.equal(expectedmessages.numericsidesonly);
     });
 
-    it('Validate POST method by passing string values as parameters', async () => {
+    it('Validate POST method by passing string value as parameter to side c', async () => {
         const res = await request
             .post('')
-            .send(trianglevalues.stringvalue);
+            .send(trianglevalues.stringvalueforsidec);
         expect(res.statusCode).to.be.equal(422);
         expect(res._body.error).to.be.equal(expectedmessages.numericsidesonly);
     });
 
-    it('Validate POST method by passing negative values as parameters', async () => {
+    it('Validate POST method by passing negative value as parameter to side a', async () => {
         const res = await request
             .post('')
-            .send(trianglevalues.negativevalues);
+            .send(trianglevalues.negativevalueforsidea);
         expect(res.statusCode).to.be.equal(422);
         expect(res._body.error).to.be.equal(expectedmessages.positivevaluesonly);
     });
 
-    it('Validate POST method by passing only two sides', async () => {
+    it('Validate POST method by passing negative value as parameter to side b', async () => {
         const res = await request
             .post('')
-            .send(trianglevalues.twosides);
+            .send(trianglevalues.negativevalueforsideb);
+        expect(res.statusCode).to.be.equal(422);
+        expect(res._body.error).to.be.equal(expectedmessages.positivevaluesonly);
+    });
+
+    it('Validate POST method by passing negative value as parameter to side c', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.negativevalueforsidec);
+        expect(res.statusCode).to.be.equal(422);
+        expect(res._body.error).to.be.equal(expectedmessages.positivevaluesonly);
+    });
+
+    it('Validate POST method by passing ab sides only', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.absidesonly);
+        expect(res.statusCode).to.be.equal(422);
+        expect(res._body.error).to.be.equal(expectedmessages.threesidesrequired);
+    });
+
+    it('Validate POST method by passing bc sides only', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.bcsidesonly);
+        expect(res.statusCode).to.be.equal(422);
+        expect(res._body.error).to.be.equal(expectedmessages.threesidesrequired);
+    });
+
+    it('Validate POST method by passing ac sides only', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.acsidesonly);
         expect(res.statusCode).to.be.equal(422);
         expect(res._body.error).to.be.equal(expectedmessages.threesidesrequired);
     });
@@ -110,24 +142,66 @@ describe('Triangle Calculator POST endpoint test',() => {
         expect(res.statusCode).to.be.equal(418);
     });
 
-    it('Validate triangle type by passing large value', async () => {
+    it('Validate triangle type by passing large value to side a', async () => {
         const res = await request
             .post('')
-            .send(trianglevalues.largevalues);
+            .send(trianglevalues.largevalueforsidea);
         expect(res.statusCode).to.be.equal(418);
     });
 
-    it('Validate triangle type by passing float value', async () => {
+    it('Validate triangle type by passing large value to side b', async () => {
         const res = await request
             .post('')
-            .send(trianglevalues.floatvalues);
+            .send(trianglevalues.largevalueforsideb);
+        expect(res.statusCode).to.be.equal(418);
+    });
+
+    it('Validate triangle type by passing large value to side c', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.largevalueforsidec);
+        expect(res.statusCode).to.be.equal(418);
+    });
+
+    it('Validate triangle type by passing float value to side a', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.floatvalueforsidea);
         expect(res.statusCode).to.be.equal(200);
     });
 
-    it('Validate triangle type by passing side value as zero', async () => {
+    it('Validate triangle type by passing float value to side b', async () => {
         const res = await request
             .post('')
-            .send(trianglevalues.zeroside);
+            .send(trianglevalues.floatvalueforsideb);
+        expect(res.statusCode).to.be.equal(200);
+    });
+
+    it('Validate triangle type by passing float value to side c', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.floatvalueforsidec);
+        expect(res.statusCode).to.be.equal(200);
+    });
+
+    it('Validate triangle type by passing value zero to side a', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.zeroforsidea);
+        expect(res.statusCode).to.be.equal(422);
+    });
+
+    it('Validate triangle type by passing value zero to side b', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.zeroforsideb);
+        expect(res.statusCode).to.be.equal(422);
+    });
+
+    it('Validate triangle type by passing value zero to side c', async () => {
+        const res = await request
+            .post('')
+            .send(trianglevalues.zeroforsidec);
         expect(res.statusCode).to.be.equal(422);
     });
 

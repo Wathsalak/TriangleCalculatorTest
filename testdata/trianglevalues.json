@@ -14,32 +14,76 @@
         "b":30,
         "c":40
     },
-    "negativevalues": {
+    "negativevalueforsidea": {
         "a":-20,
         "b":30,
         "c":40
     },
-    "specialchar": {
+    "negativevalueforsideb": {
+        "a":20,
+        "b":-30,
+        "c":40
+    },
+    "negativevalueforsidec": {
+        "a":20,
+        "b":30,
+        "c":-40
+    },
+    "specialcharforsidea": {
+        "a":"#",
+        "b":40,
+        "c":40
+    },
+    "specialcharforsideb": {
         "a":20,
         "b":"%",
         "c":40
     },
-    "stringvalue": {
+    "specialcharforsidec": {
+        "a":20,
+        "b":10,
+        "c":"&"
+    },
+    "stringvalueforsidea": {
+        "a":"art",
+        "b":10,
+        "c":40
+    },
+    "stringvalueforsideb": {
         "a":20,
         "b":"et",
         "c":40
+    },
+    "stringvalueforsidec": {
+        "a":20,
+        "b":40,
+        "c":"yh"
     },
     "incrementalvalues": {
         "a":10,
         "b":20,
         "c":30
     },
-    "twosides": {
+    "absidesonly": {
         "a":10,
         "b":20
     },
-    "oneside": {
+    "bcsidesonly": {
+        "b":10,
+        "c":20
+    },
+    "acsidesonly": {
+        "a":10,
+        "c":20
+    },
+    "onlysideagiven": {
         "a":10
+    },
+    "onlysidebgiven": {
+        "b":10
+    },
+    "onlysidecgiven": {
+        "c":10
     },
     "nosides": {
     },
@@ -48,19 +92,49 @@
         "b":20,
         "d":30
     },
-    "largevalues": {
+    "largevalueforsidea": {
         "a":99999999999999999999999999999999999999999999999999,
         "b":20,
         "c":30
     },
-    "floatvalues": {
+    "largevalueforsideb": {
+        "a":10,
+        "b":99999999999999999999999999999999999999999999999999,
+        "c":30
+    },
+    "largevalueforsidec": {
+        "a":23,
+        "b":20,
+        "c":99999999999999999999999999999999999999999999999999
+    },
+    "floatvalueforsidea": {
         "a":12.4,
         "b":20,
         "c":30
     },
-    "zeroside": {
+    "floatvalueforsideb": {
+        "a":12,
+        "b":20.56,
+        "c":30
+    },
+    "floatvalueforsidec": {
+        "a":12,
+        "b":20,
+        "c":30.46
+    },
+    "zeroforsidea": {
+        "a":0,
+        "b":10,
+        "c":30
+    },
+    "zeroforsideb": {
         "a":10,
         "b":0,
         "c":30
+    },
+    "zeroforsidec": {
+        "a":10,
+        "b":30,
+        "c":0
     }
 }
